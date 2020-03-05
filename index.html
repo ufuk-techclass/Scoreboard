@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Scoreboard</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+    <table>
+      <tr>
+        <th>
+          NAME
+        </th>
+
+        <th>
+          SCORE
+        </th>
+      </tr>
+      <tr ng-repeat="(key, value) in name2 track by $index">
+        <td>
+          {{key}}
+        </td>
+        <td>
+          {{value}}
+        </td>
+      </tr>
+    </table>
+
+    <input ng-model="name" />
+    <input type="number" ng-model="score" />
+    <button ng-click="show()">Input Score</button>
+    <button ng-click="sortu()">Sort Table</button>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.js"></script>
+  <script type="text/javascript"></script>
+  <script src="javascripts/module.js"></script>
+  <script src="javascripts/controller.js"></script>
+</html>
