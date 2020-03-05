@@ -1,0 +1,30 @@
+{
+  "name": "scoreboard",
+  "version": "1.0.0",
+  "description": "Scoreboard for displaying high scores",
+  "main": "server1.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.5",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "gh-pages": "^2.2.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufuk-techclass/Scoreboard.git"
+  },
+  "author": "ufuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ufuk-techclass/Scoreboard/issues"
+  },
+  "homepage": "https://github.com/ufuk-techclass/Scoreboard#readme"
+}

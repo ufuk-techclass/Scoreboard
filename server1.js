@@ -1,6 +1,9 @@
 var express = require("express"); //bring in express
 var app = require("express")(); //initialize variable “app” with express
 var http = require("http").Server(app);
+
+var port = process.env.PORT || 3000;
+
 var request = require("request"); // request module is Node package for making HTTP requests.
 var path = require("path"); // enables working with directories and file paths.
 var fs = require("fs");
@@ -30,6 +33,6 @@ app.post("/3", function(req, res) {
   //Not added.
 });
 
-http.listen(3000, function() {
+http.listen(port, function() {
   console.log("listening on *:3000");
 });
